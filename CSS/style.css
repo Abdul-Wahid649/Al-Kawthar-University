@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+.outfit-400 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+
+.outfit-500 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+}
+
+.outfit-600 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+}
+
+.outfit-700 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+}
+
+.inter-500{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.jost-600{
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+}
+.jost-500{
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+}
+
+.top-navbar {
+    background: #004CD4;
+}
+
+.top-row i {
+    font-size: 14px;
+}
+.number h4 {
+    font-size: 14px;
+}
+.countries img{
+    width: 20px;
+}
+
+
+.bottom-navbar{
+    width: 100vw;
+}
+
+
+
+
+/* Hero Section Container */
+.hero-section { 
+    width: 100%; 
+    height: 100vh; 
+}
+
+
+.bg-video { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    min-width: 100%; 
+    min-height: 100%; 
+    object-fit: cover; 
+    z-index: -2; 
+}
+
+
+.video-overlay { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: -1; 
+}
+
+
+.section-content { 
+    
+    z-index: 2; 
+    color: #ffffff; 
+    text-align: start; 
+    padding: 0 10vw; 
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+/* Typography Rules */
+
+.section-content h1 { 
+    font-size: clamp(2rem, 6vw, 5rem); 
+    line-height: 1.1;
+    margin-bottom: 20px;
+    
+}
+
+
+.section-content button, .creative, .subscribe { 
+    background: #004CD4; 
+    transition: background 0.3s ease;
+}
+
+.section-content button:hover {
+    background: #003699;
+}
+
+.subscribe:hover {
+    background: #003699;
+}
+
+
+/* CARD SECTION  */
+.card-section , .card-detail{
+    background: #004CD4;
+}
+
+.one-card{
+    margin-top: -70px;
+}
+
+.arrow-icon img{
+    margin-top: -30px;
+}
+
+.right-arrow{
+    font-size: 12px;
+}
+
+.about, .up-coming, .program-card, footer{
+    background: #F6F4EE;
+}
+
+.copy-right{
+    background: #EFEDE7;
+}
+
+.para{
+    border-left: 2px solid #004CD4;
+}
+
+.blue-text{
+    color: #004CD4;
+}
+.book-btn, .numbers{
+    background: #004CD4;
+    margin-top: -70px;
+}
+
+.about h5{
+    font-size: 16px;
+}
+
+
+/* Card ki styling image ke mutabiq */
+.custom-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  transition: transform 0.2s;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+.custom-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.fs-7 {
+  font-size: 0.85rem;
+}
+
+/* Container rules to keep everything in one single row */
+.custom-carousel-row {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbars */
+.custom-carousel-row::-webkit-scrollbar {
+  display: none;
+}
+.custom-carousel-row {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Card responsive widths */
+.carousel-card-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 12px;
+}
+
+@media (min-width: 768px) {
+  .carousel-card-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-card-item {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+
+
+/* Carousel Indicators */
+.academic-programs-carousel .custom-indicators-bottom {
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0 0;
+}
+
+/* Circular Indicator Buttons */
+.academic-programs-carousel .custom-indicators-bottom button {
+  width: 12px;
+  height: 12px;
+  min-width: 12px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #d1d5db;
+  opacity: 1;
+  flex: 0 0 12px;
+  cursor: pointer;
+}
+
+/* Active Indicator: Blue */
+.academic-programs-carousel .custom-indicators-bottom button.active {
+  background-color: #0d6efd;
+  opacity: 1;
+}
+
+
+
+
+
+
+.gray-border-icon{
+    position: relative;
+    top: 40px;
+}
+
+
+/* Media Queries (Choti screens/Mobiles ke liye extra adjustments) */
+@media (max-width: 768px) {
+    .one-card{
+    margin-top: 0;
+    
+}
+}
+
+
+
+/* Mobile and tablet: dark background */
+.bottom-navbar .navbar-collapse {
+  background-color: #212529;
+}
+
+/* Desktop: transparent background */
+@media (min-width: 992px) {
+  .bottom-navbar .navbar-collapse {
+    background-color: transparent !important;
+  }
+}
+
+
+
+
